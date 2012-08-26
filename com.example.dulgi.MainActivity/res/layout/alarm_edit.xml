@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="29dp"
+        android:text="시간 표시"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnSetDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timeView"
+        android:layout_below="@+id/timeView"
+        android:layout_marginTop="20dp"
+        android:text="날짜 설정" />
+
+    <Button
+        android:id="@+id/btnSetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSetDate"
+        android:layout_alignBottom="@+id/btnSetDate"
+        android:layout_centerHorizontal="true"
+        android:text="시간 설정" />
+
+    <Button
+        android:id="@+id/btnSetSec_20sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnSetTime"
+        android:layout_marginRight="24dp"
+        android:text="20초" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSetDate"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:text="등록" />
+
+    <ToggleButton
+        android:id="@+id/btnToggVibrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_alignLeft="@+id/btnSubmit"
+        android:layout_marginBottom="120dp"
+        android:checked="true"
+        android:textOff="진동 끄기"
+        android:textOn="진동 켜기" />
+
+    <ToggleButton
+        android:id="@+id/btnToggleLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnToggVibrator"
+        android:layout_alignLeft="@+id/btnToggVibrator"
+        android:layout_marginBottom="16dp"
+        android:checked="true"
+        android:textOff="라이트 끄기"
+        android:textOn="라이트 켜기" />
+
+    <ToggleButton
+        android:id="@+id/btnToggSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnToggVibrator"
+        android:layout_alignTop="@+id/btnToggVibrator"
+        android:layout_marginTop="59dp"
+        android:checked="true"
+        android:textOff="소리 끄기"
+        android:textOn="소리 켜기" />
+
+</RelativeLayout>
